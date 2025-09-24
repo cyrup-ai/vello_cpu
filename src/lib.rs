@@ -10,6 +10,13 @@
     reason = "We cast u16s to u8 in various places where we know for sure that it's < 256"
 )]
 
+extern crate alloc;
+
+// Re-export vello_common as a module to maintain compatibility with existing code  
+pub mod vello_common {
+    pub use ::vello_common::*;
+}
+
 mod render;
 
 #[doc(hidden)]
