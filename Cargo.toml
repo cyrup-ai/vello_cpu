@@ -1,0 +1,17 @@
+[package]
+name = "vello_cpu"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "CPU-based renderer, optimized for SIMD and multithreaded execution"
+homepage = "https://github.com/cyrup-ai/vello_cpu"
+repository = "https://github.com/cyrup-ai/vello_cpu"
+documentation = "https://docs.rs/vello_cpu"
+
+[dependencies]
+vello_api = { git = "https://github.com/cyrup-ai/vello_api" }
+vello_common = { git = "https://github.com/cyrup-ai/vello_common" }
+
+[features]
+default = []
+simd = []
